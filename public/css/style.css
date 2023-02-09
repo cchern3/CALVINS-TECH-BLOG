@@ -1,0 +1,420 @@
+:root {
+  --primary: #a4aea8;
+  --secondary: #6f7f7a;
+  --tertiary: #4a5353;
+  --lighter-dark: #5a5452;
+  --darker: #1d1918;
+  --border-radius: 0.35rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--darker);
+  line-height: 1.3;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 750;
+  margin: 0;
+  color: var(--darker);
+  line-height: 1.5;
+}
+
+h2 a:visited {
+  color: var(--tertiary);
+}
+
+h2 a {
+  color: var(--primary);
+}
+
+header {
+  margin-top: 51px;
+}
+
+main {
+  margin: 24px auto;
+  width: 93%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+input {
+    width: 100%;
+    border: 1.5px solid #ccc;
+    background: #FFF;
+    margin: 0 0 4px;
+    padding: 11px;
+}
+
+.headerCard h2 {
+  color: var(--primary);
+}
+
+.btn {
+  font-size: 1.4rem;
+  padding: 7px 5px;
+  width: 100%;
+  display: block;
+  margin: 6px 0;
+  border-radius: var(--border-radius);
+  color: var(--primary);
+  background-color: var(--lighter-dark);
+  box-shadow: 5px 5px var(--darker);
+  transform: translate(-1px, -1px);
+}
+
+.btn:hover {
+  color: var(--primary);
+  background-color: var(--tertiary);
+  transform: translate(0, 0);
+  box-shadow: 3px 3px var(--darker);
+  cursor: pointer;
+}
+
+.btn-inline {
+  display: inline;
+}
+
+.li-inline {
+  display: inline;
+}
+
+.navigationbar {
+  width: 100%;
+  position: fixed;
+  background-color: var(--darker);
+}
+
+.navigation-item {
+  margin: 0 45px;
+}
+
+.navigation-item a {
+  color: var(--primary);
+}
+
+.hero {
+  padding: 4% 5%;
+  background-color: var(--darker);
+  color: var(--primary);
+}
+
+.hero p {
+  max-width: 72%;
+}
+
+.applicationTitle {
+  font-size: 3.2rem;
+  background-color: var(--primary);
+  color: var(--darker);
+  padding: 0 9px;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  box-shadow: 7px 6px var(--lighter-dark);
+}
+
+.applicationTitle a {
+  color: var(--darker);
+}
+
+.list-group {
+  padding: 1%;
+}
+
+.list-item {
+  margin-bottom: 10px;
+  padding: 1.4%;
+  border-radius: var(--border-radius);
+  background-color: var(--lighter-dark);
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.list-item:hover {
+  background-color: var(--darker);
+}
+
+.footer1 a {
+  display: inline-block;
+  padding: 1.5em;
+  margin-bottom: .6em;
+  background-color: var(--darker);
+  color: var(--primary);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+}
+
+
+.box {
+  margin: 0 0 22px 0;
+  border: 4px solid var(--darker);
+  border-radius: var(--border-radius);
+}
+
+.headerCard {
+  color: var(--primary);
+  background-color: var(--darker);
+  padding: 2%;
+  border-radius: calc(0.17rem - 1px) calc(0.17rem - 1px) 0 0;
+}
+
+.cardBody1 {
+  padding: 1.5%;
+}
+
+.cardBody2 {
+  padding: 3.2%;
+  color: var(--primary);
+  background-color: var(--darker);
+  font-size: 1.5rem;
+  margin: 9px;
+}
+
+.thelabel,
+.theinput,
+.form-textarea {
+  display: block;
+}
+
+.thelabel {
+  font-size: 1.2rem;
+  margin: 0 0 0 4px;
+}
+
+.theinput {
+  width: 100%;
+  padding: 1.5%;
+  margin: 4px 0;
+  font-size: 1.2rem;
+  border: 2.5px solid var(--lighter-dark);
+  border-radius: var(--border-radius);
+}
+
+.min-100-vh {
+  min-height: 100vh;
+}
+
+.min-100-vw {
+  min-width: 100vw;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.column-automatic {
+  flex-grow: 2;
+}
+
+.col-1 {
+  flex: 0 0 calc(100% * 1 / 14 - 2%);
+}
+
+.col-2 {
+  flex: 0 0 calc(100% * 2 / 14 - 2%);
+}
+
+.col-3 {
+  flex: 0 0 calc(100% * 3 / 14 - 2%);
+}
+
+.col-4 {
+  flex: 0 0 calc(100% * 4 / 14 - 2%);
+}
+
+.col-5 {
+  flex: 0 0 calc(100% * 5 / 14 - 2%);
+}
+
+.col-6 {
+  flex: 0 0 calc(100% * 6 / 14 - 2%);
+}
+
+.col-7 {
+  flex: 0 0 calc(100% * 7 / 14 - 2%);
+}
+
+.col-8 {
+  flex: 0 0 calc(100% * 8 / 14 - 2%);
+}
+
+.col-9 {
+  flex: 0 0 calc(100% * 9 / 14 - 2%);
+}
+
+.col-10 {
+  flex: 0 0 calc(100% * 10 / 14 - 2%);
+}
+
+.col-11 {
+  flex: 0 0 calc(100% * 11 / 14 - 2%);
+}
+
+.col-12 {
+  flex: 0 0 100%;
+}
+
+/* col-sm */
+@media screen and (min-width: 640px) {
+  .col-sm-1 {
+    flex: 0 0 calc(100% * 1 / 14 - 2%);
+  }
+
+  .col-sm-2 {
+    flex: 0 0 calc(100% * 2 / 14 - 2%);
+  }
+
+  .col-sm-3 {
+    flex: 0 0 calc(100% * 3 / 14 - 2%);
+  }
+
+  .col-sm-4 {
+    flex: 0 0 calc(100% * 4 / 14 - 2%);
+  }
+
+  .col-sm-5 {
+    flex: 0 0 calc(100% * 5 / 14 - 2%);
+  }
+
+  .col-sm-6 {
+    flex: 0 0 calc(100% * 6 / 14 - 2%);
+  }
+
+  .col-sm-7 {
+    flex: 0 0 calc(100% * 7 / 14 - 2%);;
+  }
+
+  .col-sm-8 {
+    flex: 0 0 calc(100% * 8 / 14 - 2%);
+  }
+
+  .col-sm-9 {
+    flex: 0 0 calc(100% * 9 / 14 - 2%);
+  }
+
+  .col-sm-10 {
+    flex: 0 0 calc(100% * 10 / 14 - 2%);
+  }
+
+  .col-sm-11 {
+    flex: 0 0 calc(100% * 11 / 14 - 2%);
+  }
+
+  .col-sm-12 {
+    flex: 0 0 100%;
+  }
+}
+
+/* col-md */
+@media screen and (min-width: 768px) {
+  .col-md-1 {
+    flex: 0 0 calc(100% * 1 / 14 - 2%);
+  }
+
+  .col-md-2 {
+    flex: 0 0 calc(100% * 2 / 14 - 2%);
+  }
+
+  .col-md-3 {
+    flex: 0 0 calc(100% * 3 / 14 - 2%);
+  }
+
+  .col-md-4 {
+    flex: 0 0 calc(100% * 4 / 14 - 2%);
+  }
+
+  .col-md-5 {
+    flex: 0 0 calc(100% * 5 / 14 - 2%);
+  }
+
+  .col-md-6 {
+    flex: 0 0 calc(100% * 6 / 14 - 2%);
+  }
+
+  .col-md-7 {
+    flex: 0 0 calc(100% * 7 / 14 - 2%);
+  }
+
+  .col-md-8 {
+    flex: 0 0 calc(100% * 8 / 14 - 2%);
+  }
+
+  .col-md-9 {
+    flex: 0 0 calc(100% * 9 / 14 - 2%);
+  }
+
+  .col-md-10 {
+    flex: 0 0 calc(100% * 10 / 14 - 2%);
+  }
+
+  .col-md-11 {
+    flex: 0 0 calc(100% * 11 / 14 - 2%);
+  }
+
+  .col-md-12 {
+    flex: 0 0 100%;
+  }
+}
