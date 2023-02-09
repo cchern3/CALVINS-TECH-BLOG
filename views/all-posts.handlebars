@@ -1,0 +1,13 @@
+<div class="therows">
+  <div class="column-automatic">
+  <h2>Hi {{user.username}}! </h2>
+  </div>
+</div>
+<br>
+{{#if posts.length}}
+<div class="box" flex-column">
+  {{#each posts as |post|}}
+  {{> editItem post}}
+  {{/each}}
+</div>
+{{/if}}
