@@ -1,0 +1,28 @@
+<div class="box">
+  <div class="headerCard flex-row justify-space-between">
+    <h2>
+      <a href="/post/{{post.id}}">
+        <div class="col-7">{{post.titlePost}}</div>
+      </a>
+    </h2>
+    <div class="col-3">posted by {{post.user.username}} on {{format_date post.thedate}}
+    </div>
+  </div>  
+  <p class="cardBody1">
+   {{post.postContent}}
+  </p>
+</div>
+<input type="hidden" name="post-id" value="{{post.id}}"/>
+
+<div class="box">
+  <div class="headerCard"></div>
+  <form class="cardBody1" id="newComment">
+    
+    <p class="thelabel">Comment:</p>
+    <textarea class="theinput" id="comment-body" name="comment-body"></textarea>
+    <button type="submit" class="btn btn-primary">Submit:</button>
+  </form>
+{{> comments post.comments}}
+</div>
+
+<script src="/js/comment.js"></script>

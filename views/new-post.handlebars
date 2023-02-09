@@ -1,0 +1,17 @@
+<div class="box">
+  <h2 class="headerCard">Create New Post</h2>
+  <form class="cardBody1" id="newPost">
+    <input type="hidden" name="post-id" value="{{post.id}}"/>
+    <div>
+      <label class="thelabel">Title:</label>
+      <input class="theinput" type="text" name="post-title"/>
+    </div>
+    <div>
+      <label class="thelabel">Content:</label>
+      <textarea class="form-textarea theinput" name="post-body" data-number="8"></textarea>
+    </div>
+ 
+    <button class="btn btn-primary">CREATE</button>
+  </form>
+</div>
+<script src="/js/new.js"></script>
